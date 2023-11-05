@@ -1,0 +1,30 @@
+{
+  "name": "Go 1.20 Debian",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "runServices": ["app"],
+  "workspaceFolder": "/var/app",
+  "capAdd": ["SYS_PTRACE"],
+  "securityOpt": ["seccomp=unconfined"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.Go",
+        "github.copilot",
+        "esbenp.prettier-vscode",
+        "akamud.vscode-theme-onedark"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Atom One Dark",
+        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+        "[go]": {
+          "editor.insertSpaces": false,
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+          }
+        }
+      }
+    }
+  }
+}
