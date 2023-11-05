@@ -12,11 +12,12 @@
         "golang.Go",
         "github.copilot",
         "esbenp.prettier-vscode",
-        "akamud.vscode-theme-onedark"
+        "akamud.vscode-theme-onedark",
+        "ms-azuretools.vscode-docker"
       ],
       "settings": {
         "workbench.colorTheme": "Atom One Dark",
-        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+        "editor.fontFamily": "'SF Mono', monospace",
         "[go]": {
           "editor.insertSpaces": false,
           "editor.formatOnSave": true,
@@ -28,3 +29,4 @@
     }
   }
 }
+
